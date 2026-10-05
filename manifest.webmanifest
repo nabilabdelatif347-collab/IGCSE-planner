@@ -1,0 +1,22 @@
+{
+  "id": "/",
+  "name": "IGCSE Planner",
+  "short_name": "IGCSE Planner",
+  "description": "Exam countdown, past paper tracker, study plan and revision planner for Cambridge, Edexcel and OxfordAQA students: IGCSE, O Level and AS & A Level.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0b14",
+  "theme_color": "#0b0b14",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Study plan", "url": "/#plan", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Past papers", "url": "/#papers", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Exam timetable", "url": "/#calendar", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Revision planner, past paper tracker and exam countdown for Cambridge, Edexcel and OxfordAQA students: IGCSE, O Level and AS & A Level." />
+    <title>IGCSE Planner</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="IGCSE Planner" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#0b0b14" />
+    <script>
+      // Paint the saved theme before React loads, so reloads never flash the wrong colours.
+      // applyTheme() in src/theme/engine.ts caches { mode, vars } under this key.
+      (function () {
+        var root = document.documentElement;
+        var mode = 'dark';
+        try {
+          var c = JSON.parse(localStorage.getItem('igcse-planner:theme-vars') || 'null');
+          if (c && c.vars) {
+            for (var k in c.vars) if (k.indexOf('--color-') === 0) root.style.setProperty(k, c.vars[k]);
+            if (c.mode === 'light') mode = 'light';
+          }
+        } catch (e) {}
+        root.setAttribute('data-mode', mode);
+        if (mode === 'dark') root.classList.add('dark');
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-D18T3c-s.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-ODDXXdQm.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DNJXNGcB.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
